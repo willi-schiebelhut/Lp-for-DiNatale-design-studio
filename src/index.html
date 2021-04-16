@@ -1,50 +1,529 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <meta name="title" content="Мое портфолио">
+    <title>DiNatale - студия дизайна интерьера в Шымкенте</title>
+    <meta name="title" content="DiNatale - студия дизайна интерьера в Шымкенте">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Мое портфолио">
-    <meta property="og:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Мое портфолио">
-    <meta property="twitter:description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Favicon  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon//apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon//apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon//apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon//apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon//apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon//apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon//android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon//favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon//manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/ldbtn.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="60x60" href="src/icons/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+<link rel="manifest" href="src/icons/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
 <body>
 
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close"><svg width="29" height="30" viewBox="0 0 29 30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+                        fill="white" />
+                </svg>
+            </div>
+
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a class="link" href="#about">о студии</a></li>
+                    <li class="menu__link"><a class="link" href="#advantages">почему мы</a></li>
+                    <li class="menu__link"><a class="link" href="#projects">наши проекты</a></li>
+                    <li class="menu__link"><a class="link" href="#service">услуги</a></li>
+                    <li class="menu__link"><a class="link" href="#feedback">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="#">
+                    <img src="icons/pinterest.svg" alt="pinterest">
+                </a>
+                <a href="#">
+                    <img src="icons/instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <main>
+        <article>
+            <!-- Первый экран -->
+            <section class="promo">
+                <div class="container">
+                    <header class="header">
+                        <a href="#" class="logo">
+                            <img src="icons/logo.svg" alt="logo">
+                        </a>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </header>
+                    <h1 class="promo__title animate__animated animate__fadeIn">Студия дизайна интерьера
+                    </h1>
+                    <h2 class="promo__subtitle animate__animated animate__fadeIn">Короткий текст с преимуществом
+                        в две строки</h2>
+                    <div class="promo__button animate__animated animate__fadeInUp"><a href="#projects">смотреть
+                            проекты</a></div>
+
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__photo"><img src="img/about.jpeg" alt="natalia" class="about__img"></div>
+                        <div class="about__text">
+                            <h2 class="about__title title_fz48">О студии</h2>
+                            <p class="about__descr">Главной особенностью нашей студии является то, что мои клиенты
+                                всегда ко мне
+                                возвращаются вновь и приводят новых клиентов. Нас рекомендуют, а значит
+                                доверяют, к нам возвращаются, а значит ценят. Что может быть важнее?
+
+                            </p>
+                            <h3 class="about__name">Наталья Диголян</h3>
+                        </div>
+                    </div>
+                    <div class="about__counter">
+                        <div class="about__counter-1">
+                            <div class="about__counter-title">8</div>
+                            <div class="about__counter-text">Лет опыта</div>
+                        </div>
+                        <div class="about__counter-2">
+                            <div class="about__counter-title">500</div>
+                            <div class="about__counter-text">Выполненных проектов</div>
+                        </div>
+                        <div class="about__counter-3">
+                            <div class="about__counter-title">1000+</div>
+                            <div class="about__counter-text">Счастливых клиентов</div>
+                        </div>
+                    </div>
+                    <div class="about__inner"></div>
+                </div>
+            </section>
+
+            <section class="advantages" id="advantages">
+                <div class="container">
+                    <div class="advantages__titles">
+                        <h2 class="advantages__title title_fz48">Почему мы?
+                        </h2>
+                        <h3 class="advantages__subtitle"><span>Add a short description to summarize your webinar's
+                                schedule.<br></span>Provide an overview of the webinar's structure so participants gain
+                            an in-depth understanding of your event.</h3>
+                    </div>
+
+
+                    <div class="advantages__wrapper">
+                        <ul class="advantages__points">
+                            <li class="wow advantages__points-item animate__animated animate__fadeInLeft">
+                                <div>
+                                    <div class="advantages__points-title">ПРЕИМУЩЕСТВО 1
+                                    </div>
+                                    <div class="advantages__points-text">Мы доводим каждый свой проект до момента, пока
+                                        клиент не будет полностью им
+                                        доволен. Даже если это будет идти нам в убыток.</div>
+                                </div>
+                            </li>
+                            <li class="wow advantages__points-item animate__animated animate__fadeInRight">
+                                <div>
+                                    <div class="advantages__points-title">ПРЕИМУЩЕСТВО 2
+                                    </div>
+                                    <div class="advantages__points-text">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+                                        Duis vulputate commodo lectus, ac blandit elit tincidunt id.</div>
+                                </div>
+                            </li>
+                            <li class="wow advantages__points-item animate__animated animate__fadeInLeft">
+                                <div>
+                                    <div class="advantages__points-title">ПРЕИМУЩЕСТВО 3
+                                    </div>
+                                    <div class="advantages__points-text">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+                                        Duis vulputate commodo lectus, ac blandit elit tincidunt id.</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="advantages__video">
+                            <a href="#" class="advantages__play">
+                                <div class="advantages__button">
+                                </div>
+
+                            </a>
+                            <div class="advantages__look">смотреть<br>видео</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="container">
+                    <h2 class="projects__title title_fz48">Наши проекты
+                    </h2>
+                    <div class="projects__wrapper">
+                        <div data-modal="project1" class="wow projects__item animate__animated animate__fadeIn">
+                            <div class="projects__descr">
+                                <div class="projects__name">Квартира 80 м<sup>2</sup></div>
+                                <div class="projects__subtitle">ЖК "Казахстан"</div>
+                            </div>
+                            <img src="img/project_1.jpg" alt="" class="projects__img">
+                        </div>
+
+                        <div data-modal="project2" class="wow projects__item animate__animated animate__fadeIn">
+                            <div class="projects__descr">
+                                <div class="projects__name">Таунхаус 284 м<sup>2</sup></div>
+                                <div class="projects__subtitle">ЖК "Казахстан"</div>
+                            </div>
+                            <img src="img/project_2.jpg" alt="" class="projects__img">
+                        </div>
+
+                        <div data-modal="project3" class="wow projects__item animate__animated animate__fadeIn">
+                            <div class="projects__descr">
+                                <div class="projects__name">Пентхаус 295 м<sup>2</sup></div>
+                                <div class="projects__subtitle">ЖК "Казахстан"</div>
+                            </div>
+                            <img src="img/project_3.jpg" alt="" class="projects__img">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="service" id="service">
+                <div class="container">
+                    <h2 class="service__title title_fz48">услуги
+                    </h2>
+                    <div class="service__wrapper">
+                        <div class="wow service__item animate__animated animate__slideInLeft">
+                            <h3 class="service__item-title">Услуга 1
+
+                            </h3>
+                            <ul class="service__item-list">
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                            </ul>
+                            <div class="service__price">20 000 ₸</div>
+                            <a href="#feedback" class="service__buy">Заказать</a>
+                            <div class="service__number">01</div>
+                        </div>
+
+                        <div class="wow service__item animate__animated animate__slideInDown">
+                            <h3 class="service__item-title">Услуга 2
+
+                            </h3>
+                            <ul class="service__item-list">
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                            </ul>
+                            <div class="service__price">20 000 ₸</div>
+                            <a href="#feedback" class="service__buy">Заказать</a>
+                            <div class="service__number">02</div>
+                        </div>
+
+                        <div class="wow service__item animate__animated animate__slideInRight">
+                            <h3 class="service__item-title">Услуга 3
+
+                            </h3>
+                            <ul class="service__item-list">
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                            </ul>
+                            <div class="service__price">20 000 ₸</div>
+                            <a href="#feedback" class="service__buy">Заказать</a>
+                            <div class="service__number">03</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__inner">
+                    <img src="img/services.jpg" class="service__background"></img>
+                </div>
+            </section>
+
+            <section class="feedback" id="feedback">
+                <div class="container">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__left">
+                        </div>
+
+                        <div class="feedback__right">
+                            <div class="feedback__title title_fz48 animate__animated animate__slideInRight">Обсудим проект?
+
+                            </div>
+                            <form action="" class="feedback__form">
+                                <div class="feedback__form-row1">
+                                    <input name="name" class="name" type="text" placeholder="Ваше имя">
+                                    <input name="phone" class="phone" type="phone" placeholder="Ваш номер">
+                                </div>
+                                <div class="feedback__form-row2">
+                                    <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                                <div class="feedback__form-row3">
+                                    <div class="feedback__input">
+                                        <input type="file" name="file" class="feedback__file" id="feedback__file"
+                                            multiple>
+                                        <label for="feedback__file">
+                                            <span class="feedback__file-wrapper"><img src="icons/download.svg"
+                                                    alt="download" class="feedback__download"></span>
+                                            <div class="feedback__file-text">ЗАГРУЗИТЬ ФАЙЛ<span
+                                                    class="feedback__file-descr"><br>Если у вас есть готовый
+                                                    проект</span></div>
+                                        </label>
+                                    </div>
+
+                                    <button class="feedback__submit">Отправить <div class="ld ld-ring ld-spin preload" style="color:#fff;display:none"></div></button>
+                                </div>
+                            </form>
+                            <div class="feedback__policy">Нажимая кнопку «Отправить», Вы соглашаетесь на
+
+                                <a href="privacy.html"><span>обработку своих персональных данных</span></a></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+
+                    <div class="footer__wrapper">
+
+                        <h2 class="footer__title animate__animated animate__slideInLeft">Наши контакты
+                        </h2>
+
+                        <div class="footer__contacts">
+                            <div class="footer__item">
+                                <div class="footer__item-title">адрес </div>
+                                <a href="" class="footer__item-descr">Шымкент, Желтоксан 185</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item-title">телефон</div>
+                                <a href="" class="footer__item-descr">+7 (777) 560-38-12</a>
+                            </div>
+                            <div class="footer__item">
+                                <div class="footer__item-title">Почта</div>
+                                <a href="" class="footer__item-descr">natali_com.kz@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+            <div class="overlay-modal">
+
+                <!-- Квартира -->
+                <div class="modal__wrapper" id="project1">
+                    <div class="modal">
+                        <div class="modal__close">&times;</div>
+                        <div class="modal__slider">
+                            <a href="img/project_1.jpg" data-fancybox="gallery" class="modal__gallery galeryOne">
+                                <h4 class="modal__look">Смотреть фото</h4>
+                                <img src="img/project_1.jpg" alt="">
+                            </a>
+                            <div style="display: none;">
+                                <a href="../img/kvartira/1.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/2.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/3.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/4.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/5.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/6.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/7.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/8.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                                <a href="../img/kvartira/9.jpg" class="galeryOne" data-fancybox="gallery"></a>
+                            </div>
+                        </div>
+                        <div class="modal__right">
+                            <div class="modal__text">
+                                <h3 class="modal__title">Заголовок</h3>
+                                <div class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                    quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo
+                                    lectus,
+                                    ac blandit elit tincidunt id. Duis vulputate commodo lectus, ac blandit elit
+                                    tincidunt.
+
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                    quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo
+                                    lectus,
+                                    ac blandit elit tincidunt id. Duis vulputate commodo lectus, ac blandit elit
+                                    tincidunt
+                                </div>
+                            </div>
+                            <div class="modal__infopanel">
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/home.svg" alt="home">
+                                    <div class="modal__infopanel-text">Квартира</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/area.svg" alt="area">
+                                    <div class="modal__infopanel-text">ОБЩАЯ ПЛОЩАДЬ
+                                        80 М2</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/geo.svg" alt="geo">
+                                    <div class="modal__infopanel-text">ШЫМКЕНТ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Проект 2 -->
+
+                <div class="modal__wrapper" id="project2">
+                    <div class="modal">
+                        <div class="modal__close">&times;</div>
+                        <div class="modal__slider">
+                            <a href="img/project_2.jpg" data-fancybox="gallery" class="modal__gallery galeryTwo">
+                                <h4 class="modal__look">Смотреть фото</h4>
+                                <img src="img/project_2.jpg" alt="">
+                            </a>
+                            <div style="display: none;">
+                                <a href="../img/taunhouse/1.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/2.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/3.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/4.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/5.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/6.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/7.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/8.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/9.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/10.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/11.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/12.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/13.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/14.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/15.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/16.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                                <a href="../img/taunhouse/17.jpg" class="galeryTwo" data-fancybox="gallery"></a>
+                            </div>
+                        </div>
+                        <div class="modal__right">
+                            <div class="modal__text">
+                                <h3 class="modal__title">Заголовок</h3>
+                                <div class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                    quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo
+                                    lectus,
+                                    ac blandit elit tincidunt id. Duis vulputate commodo lectus, ac blandit elit
+                                    tincidunt
+                                </div>
+                            </div>
+                            <div class="modal__infopanel">
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/home.svg" alt="home">
+                                    <div class="modal__infopanel-text">Таунхаус</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/area.svg" alt="area">
+                                    <div class="modal__infopanel-text">ОБЩАЯ ПЛОЩАДЬ
+                                        284 М2</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/geo.svg" alt="geo">
+                                    <div class="modal__infopanel-text">ШЫМКЕНТ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проект 3 -->
+
+                <div class="modal__wrapper" id="project3">
+                    <div class="modal">
+                        <div class="modal__close">&times;</div>
+                        <div class="modal__slider">
+                            <a href="img/project_3.jpg" data-fancybox="gallery" class="modal__gallery galeryThree">
+                                <h4 class="modal__look">Смотреть фото</h4>
+                                <img src="img/project_3.jpg" alt="penthouse">
+                            </a>
+                            <div style="display: none;">
+                                <a href="../img/penthouse/1.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/2.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/3.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/4.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/5.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/6.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/7.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/8.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/9.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                                <a href="../img/penthouse/10.jpg" class="galeryThree" data-fancybox="gallery"></a>
+                            </div>
+                        </div>
+                        <div class="modal__right">
+                            <div class="modal__text">
+                                <h3 class="modal__title">Заголовок</h3>
+                                <div class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                    quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo
+                                    lectus,
+                                    ac blandit elit tincidunt id. Duis vulputate commodo lectus, ac blandit elit
+                                    tincidunt
+                                </div>
+                            </div>
+                            <div class="modal__infopanel">
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/home.svg" alt="home">
+                                    <div class="modal__infopanel-text">Пентхаус</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/area.svg" alt="area">
+                                    <div class="modal__infopanel-text">ОБЩАЯ ПЛОЩАДЬ
+                                        295 М2</div>
+                                </div>
+                                <div class="modal__infopanel-item">
+                                    <img src="icons/geo.svg" alt="geo">
+                                    <div class="modal__infopanel-text">ШЫМКЕНТ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

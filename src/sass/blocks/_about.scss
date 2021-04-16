@@ -1,0 +1,132 @@
+.about {
+    min-height: 720px;
+    background-color: #486158;
+    padding-bottom: 102px;
+    padding-right: 20px;
+    padding-left: 20px;
+    &__wrapper {
+        display: flex;
+        height: 406px;
+        background-color: #fafafa;
+        position: relative;
+        align-items: center;
+        &::after {
+            content: '';
+            background: url(../../icons/quotes.svg) center (center / cover) no-repeat;
+            display: block;
+            width: 76px;
+            height: 76px;
+            position: absolute;
+            right: 65px;
+            top: 65px;
+            z-index: 2;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            border: 2px solid #ebebeb;
+            left: 10px;
+            bottom: 10px;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    &__photo {
+        max-width: 40%;
+        z-index: 2;
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: rgba(12, 21, 20, 0.6);
+            width: 100%;
+            height: 100%;
+            left: -20px;
+            top: -20px;
+            z-index: -1;
+        }
+    }
+    &__text {
+        margin-top: 50px;
+        width: 565px;
+        margin-left: 72px;
+        position: relative;
+        z-index: 1;
+        
+    }
+    &__title {
+        color: #1e1e1e;
+    }
+    &__descr {
+        margin-top: 30px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    &__counter {
+        position: absolute;
+        min-height: 250px;
+        display: block;
+        z-index: 9;
+        display: grid;
+        background-color: rgba(37, 71, 69, 0.9);
+        grid-template-columns: 290px 290px 460px;
+        right: 110px;
+        top: 380px;
+        &-1 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+        &-2 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+        &-3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+            background-color: rgba(21, 33, 32, 0.41);
+            
+            
+        }
+        &-title {
+            color: #ba9e6c;
+            font-family: "Playfair Display";
+            font-size: 110px;
+            font-weight: 400;
+            line-height: 75px;
+            opacity: 0;
+        }
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #ffffff;
+            margin-top: 27px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('../../fonts/GothamPro-Light.eot');
+    src: url('../../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GothamPro-Light.woff') format('woff'),
+        url('../../fonts/GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fonts/Gotham Pro Regular';
+    src: url('../../fonts/GothamPro.eot');
+    src: url('../../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GothamPro.woff') format('woff'),
+        url('../../fonts/GothamPro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../../fonts/GothamPro-Medium.eot');
+    src: url('../../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GothamPro-Medium.woff') format('woff'),
+        url('../../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../../fonts/GothamPro-Bold.eot');
+    src: url('../../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('../../fonts/GothamPro-Black.eot');
+    src: url('../../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/GothamPro-Black.woff') format('woff'),
+        url('../../fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display Regular';
+    src: url('../../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+   font-family: 'Gotham Pro', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0; 
+}

@@ -1,0 +1,99 @@
+.footer {
+    min-height: 200px;
+    background-color: #1b2c2b;
+    padding: 65px 40px 65px 0;
+    position: relative;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        display: block;
+        width: calc( 30% - 220px );
+        height: 100%;
+        background-color: #33413c;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: left;
+        text-transform: uppercase;
+        color: #ffffff;
+        line-height: 34px;
+        margin-right: 127px;
+        position: relative;
+        &-wrapper {
+            background-color: #33413c;
+            height: 100%;
+            width: 220px;
+            position: absolute;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 184px;
+        position: relative;
+        &:nth-child(1) {
+            
+            &::before {
+                content: '';
+                display: block;
+                background: url(../../icons/home.svg) center (center / cover) no-repeat;
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                margin-left: -36px;
+            }
+        }
+        &:nth-child(2) {
+            
+            &::before {
+                content: '';
+                display: block;
+                background: url(../../icons/phone.svg) center (center / cover) no-repeat;
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                margin-left: -36px;
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                content: '';
+                display: block;
+                background: url(../../icons/mail.svg) center (center / cover) no-repeat;
+                width: 26px;
+                height: 26px;
+                position: absolute;
+                margin-left: -36px;
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        &-descr {
+            font-size: 14px;
+            font-weight: 400;
+            color: #ffffff;
+            transition: .3s all;
+            &:hover {
+                color: #ba9e6c;
+                text-decoration: underline;
+                transition: .3s all;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        width: 1120px;
+    }
+}

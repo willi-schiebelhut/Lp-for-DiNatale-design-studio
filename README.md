@@ -1,3 +1,3 @@
 # Landing-page для дизайн-студии "DiNatale" 
-[(https://dinatale.studio)] 
+[Перейти](https://dinatale.studio)
 
